@@ -1,7 +1,7 @@
 using UnityEngine;
 using Cinemachine;
 using StarterAssets;
-
+using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera zoomVirtualCamera;
@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private LayerMask targetColliderLayerMask = new LayerMask();
     [SerializeField] private Transform testObjectTransform;
     private FirstPersonController firstPersonController;
+    [SerializeField] private Text position;
     private StarterAssetsInputs starterAssetsInputs;
 
 
@@ -39,7 +40,7 @@ public class GameController : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit target, Mathf.Infinity, targetColliderLayerMask))
         {
             testObjectTransform.position = target.point;
-
+            position.text = string.Format("[X:{0},Y:{1},Z:{2}]", target.point.x, target.point.y, target.point.z);
             Debug.DrawLine(Camera.main.transform.position, target.point, Color.cyan, 0.5f);
         }
 
