@@ -12,8 +12,8 @@ namespace StarterAssets
         public Vector2 look;
         public bool jump;
         public bool sprint;
-
         public bool zoom;
+        public bool shoot;
 
         [Header("Movement Settings")]
         public bool analogMovement;
@@ -51,6 +51,10 @@ namespace StarterAssets
         {
             ZoomInput(value.isPressed);
         }
+        public void OnShoot(InputValue value)
+        {
+            ShootInput(value.isPressed);
+        }
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -79,6 +83,10 @@ namespace StarterAssets
         public void ZoomInput(bool newZoomState)
         {
             zoom = newZoomState;
+        }
+        public void ShootInput(bool newShootState)
+        {
+            shoot = newShootState;
         }
 
 #if !UNITY_IOS || !UNITY_ANDROID
