@@ -2,6 +2,8 @@ using UnityEngine;
 using Cinemachine;
 using StarterAssets;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class GameController : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera zoomVirtualCamera;
@@ -30,6 +32,10 @@ public class GameController : MonoBehaviour
     {
         firstPersonController = GetComponent<FirstPersonController>();
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+    }
+    private void OnDisable()
+    {
+        PlayerPrefs.SetInt("score", points);
     }
     void Update()
     {
@@ -113,6 +119,7 @@ public class GameController : MonoBehaviour
                         if (health <= 0)
                         {
                             Debug.Log("You Lose!");
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
                         }
                     }
 
