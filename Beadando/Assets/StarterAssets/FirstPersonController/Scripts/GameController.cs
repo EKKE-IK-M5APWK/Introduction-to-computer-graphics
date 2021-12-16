@@ -14,10 +14,13 @@ public class GameController : MonoBehaviour
     [SerializeField] private Color color;
     [SerializeField] private int points;
     [SerializeField] private int health;
+    [SerializeField] private float timeRemaining = 60;
+    [SerializeField] private bool gameRunning = false;
     private StarterAssetsInputs starterAssetsInputs;
 
     private void Start()
     {
+        gameRunning = true;
         health = 3;
         points = 0;
     }
