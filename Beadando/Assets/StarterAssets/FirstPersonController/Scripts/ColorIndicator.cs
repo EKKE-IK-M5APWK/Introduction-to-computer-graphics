@@ -7,15 +7,18 @@ public class ColorIndicator : MonoBehaviour
 
     [SerializeField] private Vector3 rotationVector = new Vector3(10, 10, 10);
     [SerializeField] private Color selectedColor;
+    private void Start()
+    {
+        selectedColor = Color.white;
+    }
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(rotationVector * Time.deltaTime);
-        this.GetComponent<MeshRenderer>().material.SetColor("_Color", selectedColor);
-
+        this.transform.Rotate(rotationVector * Time.deltaTime);
     }
     public void setColor(Color color)
     {
         selectedColor = color;
+        this.GetComponent<MeshRenderer>().material.SetColor("_Color", selectedColor);
     }
 }

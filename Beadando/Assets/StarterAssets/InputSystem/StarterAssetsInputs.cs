@@ -14,6 +14,10 @@ namespace StarterAssets
         public bool sprint;
         public bool zoom;
         public bool shoot;
+        public bool red;
+        public bool blue;
+        public bool green;
+        public bool yellow;
 
         [Header("Movement Settings")]
         public bool analogMovement;
@@ -55,6 +59,22 @@ namespace StarterAssets
         {
             ShootInput(value.isPressed);
         }
+        public void OnRed(InputValue value)
+        {
+            RedInput(value.isPressed);
+        }
+        public void OnBlue(InputValue value)
+        {
+            BlueInput(value.isPressed);
+        }
+        public void OnGreen(InputValue value)
+        {
+            GreenInput(value.isPressed);
+        }
+        public void OnYellow(InputValue value)
+        {
+            YellowInput(value.isPressed);
+        }
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -88,6 +108,26 @@ namespace StarterAssets
         {
             shoot = newShootState;
         }
+        public void RedInput(bool newRedState)
+        {
+            red = newRedState;
+        }
+
+        public void BlueInput(bool newBlueState)
+        {
+            blue = newBlueState;
+        }
+
+        public void GreenInput(bool newGreenState)
+        {
+            green = newGreenState;
+        }
+
+        public void YellowInput(bool newYellowState)
+        {
+            yellow = newYellowState;
+        }
+
 
 #if !UNITY_IOS || !UNITY_ANDROID
 
