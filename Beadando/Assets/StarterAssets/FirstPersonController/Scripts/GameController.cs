@@ -14,13 +14,11 @@ public class GameController : MonoBehaviour
     [SerializeField] private Color color;
     [SerializeField] private int points;
     [SerializeField] private int health;
-    [SerializeField] private float timeRemaining = 60;
-    [SerializeField] private bool gameRunning = false;
     private StarterAssetsInputs starterAssetsInputs;
 
     private void Start()
     {
-        gameRunning = true;
+
         health = 3;
         points = 0;
     }
@@ -57,8 +55,10 @@ public class GameController : MonoBehaviour
             firstPersonController.SetSensitivity(baseSesnsitivity);
         }
 
+
         if (starterAssetsInputs.shoot)
         {
+            FindObjectOfType<AudioManager>().Play("pew");
             if (targetTransform != null)
             {
                 Debug.Log("We hit something!");
@@ -85,6 +85,11 @@ public class GameController : MonoBehaviour
             }
             starterAssetsInputs.shoot = false;
         }
+
+    }
+
+    public void SelectAColor()
+    {
 
     }
 }
