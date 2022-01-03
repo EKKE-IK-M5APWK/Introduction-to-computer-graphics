@@ -1,0 +1,11 @@
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\bin\Debug\1.Feladat.exe.config
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\bin\Debug\1.Feladat.exe
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\bin\Debug\1.Feladat.pdb
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\bin\Debug\Grafika_DLL.dll
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\_1.Feladat.Form1.resources
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\_1.Feladat.Properties.Resources.resources
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.csproj.GenerateResource.cache
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.csproj.CoreCompileInputs.cache
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.csproj.CopyComplete
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.exe
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.pdb
