@@ -9,3 +9,4 @@ F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat
 F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.csproj.CopyComplete
 F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.exe
 F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.pdb
+F:\GitHub\Introduction to computer graphics\Zárthelyi Dolgozat\M5APWK\1.Feladat\obj\Debug\1.Feladat.csproj.AssemblyReference.cache
